@@ -77,7 +77,7 @@ function mostrarTitulo() {
   titulo.style.animation = "fadeIn 3s ease-in-out forwards"; 
 }
 
-setTimeout(ocultarTitulo, 9000);
+setTimeout(ocultarTitulo, 10000);
 
 setTimeout(mostrarTitulo, 180000);
 

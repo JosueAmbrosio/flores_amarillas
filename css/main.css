@@ -19,6 +19,7 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+
 #lyrics {
   font-size: 28px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -31,9 +32,11 @@ body {
   z-index: 1;
   font-weight: bold;
   letter-spacing: 4px;
-  white-space: nowrap; /* Evita que el texto se divida */
+  text-align: center; /* Asegúrate de que el texto esté centrado */
+  display: flex; /* Usar flexbox para el centrado */
+  flex-direction: column; /* Direcciona el contenido en columna */
+  align-items: center; /* Centra horizontalmente */
   overflow: hidden; /* Oculta el texto que se desborda */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
 
 @media only screen and (max-width: 600px) {
@@ -41,12 +44,14 @@ body {
     font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
     margin-bottom: 530px; /* Ajusta el espacio inferior */
     letter-spacing: 3px;
+    white-space: normal; /* Permitir que el texto se divida en líneas */
   }
 }
 
+
 #backButton {
   position: absolute; /* Posiciona el botón en relación a su contenedor */
-  top: 10px; /* Ajusta la distancia desde la parte superior */
+  bottom: 10px; /* Ajusta la distancia desde la parte superior */
   right: 10px; /* Ajusta la distancia desde la derecha */
   z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
 }
